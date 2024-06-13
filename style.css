@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-size: 11px;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+
+
+
+.container {
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 10px;
+    justify-content: center;
+    background-color: #eee;
+    align-items: center;
+
+
+}
+
+.container div {
+
+    flex-basis: 200px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: left;
+    gap: 0;
+    flex-grow: 0;
+    padding: 30px;
+    flex-shrink: 0;
+
+
+}
+
+
+div h2 {
+    color: hsl(0, 0%, 95%);
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+
+div p {
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-top: 20px;
+    line-height: .9rem;
+}
+
+.one,
+.one a:hover {
+    background-color: hsl(31, 77%, 52%);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+
+}
+
+.one {
+    border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+    -ms-border-radius: 5px 5px 0 0;
+    -o-border-radius: 5px 5px 0 0;
+}
+
+.two,
+.two a:hover {
+    background-color: hsl(184, 100%, 22%);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.three,
+.three a:hover {
+    background-color: hsl(179, 100%, 13%);
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.three {
+    border-radius: 0 0 5px 5px;
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    -ms-border-radius: 0 0 5px 5px;
+    -o-border-radius: 0 0 5px 5px;
+}
+
+div a {
+    text-decoration: none;
+    background-color: hsl(0, 0%, 95%);
+    display: block;
+    width: 80px;
+    padding: 8px;
+    margin-top: 40px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    text-align: center;
+}
+
+.one a {
+    color: hsl(31, 77%, 52%);
+
+}
+
+.two a {
+    color: hsl(184, 100%, 22%);
+}
+
+.three a {
+    color: hsl(179, 100%, 13%);
+}
+
+.one a:hover,
+.two a:hover,
+.three a:hover {
+    color: hsl(0, 0%, 95%);
+    border-color: hsl(0, 0%, 95%);
+}
+
+@media(min-width:768px) {
+    .container {
+        width: 100%;
+        height: 98vh;
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 10px;
+        padding: 10px;
+        justify-content: center;
+        background-color: #eee;
+        align-items: center;
+
+
+    }
+
+    .one {
+        border-radius: 5px 0 0 5px;
+        -webkit-border-radius: 5px 0 0 5px;
+        -moz-border-radius: 5px 0 0 5px;
+        -ms-border-radius: 5px 0 0 5px;
+        -o-border-radius: 5px 0 0 5px;
+    }
+
+    .three {
+        border-radius: 0 5px 5px 0;
+        -webkit-border-radius: 0 5px 5px 0;
+        -moz-border-radius: 0 5px 5px 0;
+        -ms-border-radius: 0 5px 5px 0;
+        -o-border-radius: 0 5px 5px 0;
+    }
+}
+
+/* .attribution {
+    font-size: 11px;
+   
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+} */
